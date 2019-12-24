@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Website for ebay used auto parts seller part wheeler where we seek out the highest quality in used auto parts">
   <title>Part Wheeler Home</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
@@ -16,15 +18,17 @@
   <!-- Forked from a template on Tutorialzine: https://tutorialzine.com/2016/06/freebie-landing-page-template-with-flexbox -->
   <header>
     <div class="logo">
-      <img src="./assets/img/partWheelerLogo.jpg" alt="">
+      <img src="./assets/img/partWheelerLogo.jpg" alt="Logo for PartWheeler">
       <h2>Part Wheeler</h2>
     </div>
 
     <nav>
+
       <li><a href="https://www.ebay.com/usr/partwheeler">Ebay
           Store</a></li>
       <li><a href="#testimonials">Testimonials</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+
     </nav>
   </header>
 
@@ -66,15 +70,19 @@
     <hr>
   </section>
 
-  <section class="contact">
+  <section class="contact" id="contact">
     <h3 class="title">Contact us</h3>
     <p>By Phone: 303.999.9999</p>
     <p>By Email: <a href="mailto:email@something.com" target="_self" data-content="email@something.com" data-type="mail"
         style="color: black">email@something.com</a></p>
-
+    <label for="email">
+      <p>Subscribe to our mailing list below:</p>
+    </label>
     <form action="">
-      <input type="email" placeholder="Email" name="" id="">
+      <input type="email" placeholder="Email" name="email" id="email">
       <a href="#" class="btn">Subscribe Now</a>
+
+
     </form>
 
   </section>
@@ -92,6 +100,23 @@
 
   <script type="text/javascript"
     src="//www.auctionnudge.com/feed/item/js/theme/responsive/page/init/img_size/120/cats_output/dropdown/search_box/1/show_logo/1/lang/english/SellerID/partwheeler/siteid/0/MaxEntries/8">
+  </script>
+  <script type="text/javascript">
+    function auction_nudge_loaded() {
+      //Get the Your eBay Listings container
+      let an_wrap = document.getElementById('auction-nudge-items');
+
+      //Get all 'view' links
+      let an_links = an_wrap.getElementsByClassName('an-view');
+
+      //Loop over each link
+      for (let i = 0; i < an_links.length; i++) {
+        //Replace the text in each link
+        an_links[i].innerHTML = an_links[i].innerHTML.replace('Buy It Now',
+          'View on <span style="color: red;">e</span><span style="color:blue;">B</span><span style="color:yellow;">a</span><span style="color:green;">y</span>'
+          );
+      }
+    }
   </script>
 </body>
 
