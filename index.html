@@ -1,109 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Website for ebay used auto parts seller part wheeler where we seek out the highest quality in used auto parts"
+    />
+    <title>Part Wheeler Home</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/37ccc5b7d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description"
-    content="Website for ebay used auto parts seller part wheeler where we seek out the highest quality in used auto parts">
-  <title>Part Wheeler Home</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/37ccc5b7d8.js" crossorigin="anonymous"></script>
-  <script src="./assets/js/index.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-
-<body>
-  <div class="topnav" id="myTopnav">
-    <div class="logo">
-      <img src="./assets/img/partwheelermainlogo.png" alt="Logo for PartWheeler">
+  <body>
+    <div class="topnav" id="myTopnav">
+      <div class="logo">
+        <img
+          src="./assets/img/partwheelermainlogo.png"
+          alt="Logo for PartWheeler"
+        />
+      </div>
+      <div class="links">
+        <a class="item" href="https://www.ebay.com/usr/partwheeler"
+          >Ebay Store</a
+        >
+        <a class="item" href="#testimonials">Testimonials</a>
+        <a class="item" href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </div>
-    <div class="links">
-      <a class="item" href="https://www.ebay.com/usr/partwheeler">Ebay Store</a>
-      <a class="item" href="#testimonials">Testimonials</a>
-      <a class="item" href="#contact">Contact</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    <section class="hero">
+      <div class="background-image"></div>
+      <div class="hero-content-area">
+        <h1>Part Wheeler</h1>
+        <h3>Seeking out the highest quality in used auto parts</h3>
+      </div>
+      <a href="https://www.ebay.com/usr/partwheeler" class="btn"
+        >Visit Our Ebay Store</a
+      >
+    </section>
 
-  </div>
-  <section class="hero">
-    <div class="background-image"></div>
-    <div class="hero-content-area">
-      <h1>Part Wheeler</h1>
-      <h3>Seeking out the highest quality in used auto parts</h3>
+    <section class="products">
+      <h3 class="title">Featured Products</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. id vitae dolore
+        a nam nihil?
+      </p>
+      <hr />
+      <div id="auction-nudge-items" class="auction-nudge"></div>
+    </section>
 
-    </div>
-    <a href="https://www.ebay.com/usr/partwheeler" class="btn">Visit Our Ebay Store</a>
-  </section>
+    <section class="about">
+      <h3 class="title" id="aboutTitle">About Us</h3>
+      <div id="aboutUs">
+        <p><img src="./assets/img/partWheelerLogo.jpg" alt="" /></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quo
+          fuga, obcaecati quibusdam cum odit possimus doloribus numquam. Ipsam
+          voluptatibus eveniet reiciendis obcaecati, tempora quaerat eum
+          incidunt officia distinctio fugiat voluptatum quae sequi cupiditate id
+          numquam dolore blanditiis quis quo ut. Cupiditate quod a labore,
+          corrupti vel beatae vitae? In.
+        </p>
+      </div>
+    </section>
 
-  <section class="products">
-    <h3 class="title">Featured Products</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. id vitae dolore a nam nihil?</p>
-    <hr>
-    <div id="auction-nudge-items" class="auction-nudge"></div>
-  </section>
+    <section class="reviews" id="testimonials">
+      <h3 class="title">Testimonials</h3>
+      <p class="quote">
+        Great communication and superfast shipping! AAAAA +++++
+      </p>
+      <p class="author">- Happy Ebay Customer</p>
+      <p class="quote">
+        KEEP ON COMING BACK FOR MORE! A++++ TRUSTED E-BAYER - THANKS AGAIN!
+      </p>
+      <p class="author">- Happy Ebay Customer</p>
+      <p class="quote">Fast shipper,perfect shape,I will buy again.</p>
+      <p class="author last_author">- Happy Ebay Customer</p>
+      <h3 class="title">
+        <a
+          href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=partwheeler&ftab=AllFeedback&myworld=true&rt=nc&_trksid=p2545226.m2531.l4585"
+          >See All Our Ebay Reviews Here</a
+        >
+      </h3>
+      <hr />
+    </section>
 
-  <section class="about">
-    <h3 class="title" id="aboutTitle">About Us</h3>
-    <div id="aboutUs">
-      <p><img src="./assets/img/partWheelerLogo.jpg" alt=""></p>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas quo fuga, obcaecati quibusdam cum odit
-        possimus doloribus numquam. Ipsam voluptatibus eveniet reiciendis obcaecati, tempora quaerat eum incidunt
-        officia distinctio fugiat voluptatum quae sequi cupiditate id numquam dolore blanditiis quis quo ut. Cupiditate
-        quod a labore, corrupti vel beatae vitae? In.</p>
-    </div>
-  </section>
+    <section class="contact" id="contact">
+      <h3 class="title">Contact us</h3>
+      <p>By Phone: 720.238.9078</p>
+      <p>
+        By Email:
+        <a
+          href="mailto:partwheeler@gmail.com"
+          target="_self"
+          data-content="partwheeler@gmail.com"
+          data-type="mail"
+          style="color: black"
+          >partwheeler@gmail.com</a
+        >
+      </p>
+      <label for="email">
+        <p>Subscribe to our mailing list below:</p>
+      </label>
+      <form action="">
+        <input type="email" placeholder="Email" name="email" id="email" />
+        <a href="#" class="btn">Subscribe Now</a>
+      </form>
+    </section>
 
-  <section class="reviews" id="testimonials">
-    <h3 class="title">Testimonials</h3>
-    <p class="quote">Great communication and superfast shipping! AAAAA +++++</p>
-    <p class="author">- Happy Ebay Customer</p>
-    <p class="quote">KEEP ON COMING BACK FOR MORE! A++++ TRUSTED E-BAYER - THANKS AGAIN!</p>
-    <p class="author">- Happy Ebay Customer</p>
-    <p class="quote">Fast shipper,perfect shape,I will buy again. </p>
-    <p class="author last_author">- Happy Ebay Customer</p>
-    <h3 class="title"><a
-        href="https://feedback.ebay.com/ws/eBayISAPI.dll?ViewFeedback2&userid=partwheeler&ftab=AllFeedback&myworld=true&rt=nc&_trksid=p2545226.m2531.l4585">See
-        All Our Ebay Reviews Here</a></h3>
-    <hr>
-  </section>
+    <footer>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iure.
+      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <ul>
+        <li>
+          <a href="#"><i class="fab fa-ebay fa-2x"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        </li>
+        <li>
+          <a href=""><i class="fab fa-youtube fa-2x"></i></a>
+        </li>
+      </ul>
+    </footer>
 
-  <section class="contact" id="contact">
-    <h3 class="title">Contact us</h3>
-    <p>By Phone: 303.999.9999</p>
-    <p>By Email: <a href="mailto:email@something.com" target="_self" data-content="email@something.com" data-type="mail"
-        style="color: black">email@something.com</a></p>
-    <label for="email">
-      <p>Subscribe to our mailing list below:</p>
-    </label>
-    <form action="">
-      <input type="email" placeholder="Email" name="email" id="email">
-      <a href="#" class="btn">Subscribe Now</a>
-
-
-    </form>
-
-  </section>
-
-  <footer>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iure.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <ul>
-      <li><a href="#"><i class="fab fa-ebay fa-2x"></i></a></li>
-      <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
-      <li><a href=""><i class="fab fa-youtube fa-2x"></i></a></li>
-    </ul>
-
-  </footer>
-
-  <script type="text/javascript"
-    src="//www.auctionnudge.com/feed/item/js/theme/responsive/page/init/img_size/120/cats_output/dropdown/search_box/1/show_logo/1/lang/english/SellerID/partwheeler/siteid/0/MaxEntries/8">
-  </script>
-
-</body>
-
+    <script
+      type="text/javascript"
+      src="//www.auctionnudge.com/feed/item/js/theme/responsive/page/init/img_size/120/cats_output/dropdown/search_box/1/show_logo/1/lang/english/SellerID/partwheeler/siteid/0/MaxEntries/8"
+    ></script>
+  </body>
 </html>
